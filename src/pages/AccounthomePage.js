@@ -43,6 +43,7 @@ function Accounthome() {
   const userName = userInfo.user.korean_name;
   const nickName = userInfo.user.nickname;
   const profilePicture = userInfo.user.profile_picture;
+  const familyInvite = userInfo.user.flower_pot.pot_number;
 
   // const familyMembersInfo = {
   //   familyMembers: [
@@ -168,7 +169,7 @@ function Accounthome() {
         {" "}
         ⨁ 가족 초대하기
       </button>
-      {isInvited && <p>화분번호</p>}
+      {isInvited && <p>화분 번호: "{familyInvite}"을 가족에게 보내주세요~!</p>}
       <MainNav />
     </div>
   );
