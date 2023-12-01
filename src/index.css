@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter-Black.ttf") format("truetype");
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
   /*font-family: "namu";
   src: url("./assets/fonts/NanumPenScript-Regular.ttf") format("truetype");*/
 }
@@ -16,4 +16,6 @@ body {
 html {
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
 }

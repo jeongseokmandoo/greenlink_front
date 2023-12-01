@@ -3,6 +3,7 @@ import AccountNav from "../components/AccountNav";
 import { Input2 } from "../components/AccountInput";
 import { useNavigate } from "react-router-dom";
 import BigBtn from "../components/BigBtn";
+import signuppic from "../assets/signuppic.png";
 
 // 토큰 관련된 건 대부분 백에서 만들어주면 프론트에서 받아서 설정
 
@@ -11,7 +12,7 @@ const ptag1 = {
   justifyContent: "center",
   fontSize: "calc(1.5vh + 1.25vw)",
   fontWeight: "bold",
-  marginTop: "25vh",
+  marginTop: "3vh",
 };
 
 const ptag2 = {
@@ -19,6 +20,13 @@ const ptag2 = {
   justifyContent: "center",
   fontSize: "calc(1vh + 1.25vw)",
   marginBottom: "2.5vh",
+};
+
+const picstyle = {
+  marginLeft: "35vw",
+  marginTop: "7vh",
+  width: "30vw",
+  marginRight: "35vw",
 };
 
 function SignupPage(props) {
@@ -31,12 +39,11 @@ function SignupPage(props) {
     // 화분번호가 없으면
     if (!plantnumber) {
       alert("화분번호를 입력해주세요.");
-    }
-    // else if (!plantnumber == 8) {
-    //   alert("화분번호는 8자리 입니다.");
-    // } else if (!/^[A-Z]{4}[0-9]{4}$/.test(plantnumber)) {
-    //   alert("화분번호 양식을 지켜주세요.");
-    // } // 화분번호가 있으면
+    } else if (!plantnumber == 8) {
+      alert("화분번호는 8자리 입니다.");
+    } else if (!/^[A-Z]{4}[0-9]{4}$/.test(plantnumber)) {
+      alert("화분번호 양식을 지켜주세요.");
+    } // 화분번호가 있으면
     else {
       //로컬 스토리지에 데이터 저장 (왼쪽: 키, 오른쪽: 데이터)
       localStorage.setItem("flower_pot", plantnumber);
@@ -155,6 +162,7 @@ function SignupPage(props) {
   return (
     <div>
       <AccountNav text1="계정만들기" text2="로그인" link1="/api/login/" />
+      <img src={signuppic} alt="사인업페이지 사진" style={picstyle} />
       <p style={ptag1}>화분 하단의 번호를 입력해주세요.</p>
       {/* plantnumber 작성 input */}
       <Input2
@@ -163,6 +171,9 @@ function SignupPage(props) {
         onChange={(e) => setPlantnumber(e.target.value)}
         placeholder="화분 번호"
       />
+      <br />
+      <br />
+      <br />
       <p style={ptag2}>🪴 아직 화분이 없어요. 🪴</p>
       <BigBtn onClick={start} text="시작하기" />
     </div>

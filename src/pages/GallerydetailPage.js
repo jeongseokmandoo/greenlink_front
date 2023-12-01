@@ -13,14 +13,16 @@ const textst = {
 };
 
 function GallerydetailPage(props) {
+  const topdata = JSON.parse(localStorage.getItem("data"));
+  const textname2 = topdata.user.flower_pot.plant_name;
+
   return (
     <div>
-      <TopNav text="퉁퉁이 사진" icon1={no_icon} icon2={no_icon} />
+      <TopNav text={textname2 + "사진"} icon1={no_icon} icon2={no_icon} />
       <br />
       <br />
       <p style={textst}>2023.11.18</p>
       <GalleryPic2 img={GalleryPage2Pic} />
-      <br />
       <br />
       <br />
       <br />

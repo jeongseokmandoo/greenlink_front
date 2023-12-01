@@ -12,12 +12,12 @@
   margin-right: 2%;
   background-color: #e7f2ed;
   width: 3vw;
-  height: 10vh;
+  height: 9.5vh;
   border-radius: 5px;
 }
 
 .notifibox .content {
-  font-size: 40px;
+  font-size: 35px;
   padding: 50px;
 }
 

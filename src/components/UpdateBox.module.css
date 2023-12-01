@@ -8,10 +8,15 @@
   font-size: 2em; /* 글자 크기 조절 */
   border-radius: 50px;
   margin-bottom: 3vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .ptag {
+  margin-left: 15vw;
   font-size: 2em;
+  margin-right: 15vw;
+  padding-left: 5vw;
 }
 
 /* 소정이 말해주기 */
