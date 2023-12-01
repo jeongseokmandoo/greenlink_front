@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "user1",
+    "email": "user1@example.com",
+    "korean_name": "사용자1",
+    "profile_picture": 1,
+    "flower_pot": 1,
+    "notifications_enabled": true,
+    "nickname": "별명1"
+  },
+  {
+    "id": 2,
+    "username": "user2",
+    "email": "user2@example.com",
+    "korean_name": "사용자2",
+    "profile_picture": 2,
+    "flower_pot": 2,
+    "notifications_enabled": false,
+    "nickname": "별명2"
+  },
+  {
+    "id": 20,
+    "username": "user20",
+    "email": "user20@example.com",
+    "korean_name": "사용자20",
+    "profile_picture": 20,
+    "flower_pot": 20,
+    "notifications_enabled": true,
+    "nickname": "별명20"
+  }
+]

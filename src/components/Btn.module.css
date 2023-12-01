@@ -1,0 +1,15 @@
+.Btn {
+  align-items: center;
+  display: flex;
+  width: 70vw;
+  margin: 1.5vh 9vw 0 9vw;
+  padding: 1vh 6vw;
+  color: white;
+  background-color: #517849;
+  border-radius: 20px;
+  text-decoration: none;
+  justify-content: center;
+  font-size: calc(1.25vw + 1.25vh);
+  font-weight: bold;
+  border-radius: 50px;
+}

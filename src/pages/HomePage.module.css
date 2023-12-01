@@ -1,0 +1,163 @@
+.main {
+  width: 100vw;
+  height: auto;
+}
+
+.main .titlebox {
+  position: absolute;
+  top: 8vh;
+  left: 5vw;
+  max-width: fit-content;
+}
+
+.main .title {
+  font-size: 3em;
+  position: relative; /* 상대 위치로 변경 */
+  z-index: 2; /* title이 titleback보다 앞에 오도록 z-index 설정 */
+}
+
+.main .titleback {
+  position: absolute; /* 절대 위치로 변경 */
+  top: 0.5vh; /* title-container 기준으로 위치 설정 */
+  width: 103%; /* 부모 컨테이너의 너비에 맞게 설정 */
+  height: 0.6vh;
+  margin-top: 0.8vh;
+  border-radius: 50px;
+
+  background-color: #57eeca;
+  opacity: 49%;
+  z-index: 1; /* titleback이 title 뒤에 오도록 z-index 설정 */
+}
+
+.main .notifihomelist {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 30vh;
+  position: absolute;
+  top: 13vh;
+  right: 6vw;
+  align-items: flex-end;
+}
+
+.container {
+  display: flex; /* 두 div를 가로로 배열 */
+  flex-direction: row;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
+
+.main .notifihomelist .notifihomebox {
+  width: auto;
+  height: auto;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  background-color: #d9d9d9;
+  max-width: 55vw;
+
+  border-radius: 20px;
+  box-shadow: 0.1px 7px 10px 0.5px rgb(174, 174, 174);
+}
+
+.notifihomebox:active {
+  transform: scale(1.03);
+}
+
+.time {
+  font-size: 1.8em;
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  margin-left: 2vw;
+  align-self: flex-end;
+  /* margin-right: 1em; 오른쪽에 여백 추가 */
+}
+
+.notifitext {
+  font-size: 2.2em;
+  margin-top: 1.5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 1.2vw;
+}
+
+.plantimage {
+  position: absolute;
+  top: 40vh;
+  left: 15.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e7f2ed;
+  border-radius: 50%;
+  box-shadow: -1px 7px 40px 5px rgb(174, 174, 174);
+}
+
+.plantimage img {
+  position: absolute;
+  bottom: 4.5vh;
+  width: 65vw; /* 화면 너비의 50%만큼 이미지 크기를 설정합니다. */
+  height: auto; /* 이미지의 원래 비율을 유지합니다. */
+  border-radius: 50%; /* 이미지를 원형으로 만듭니다. */
+  animation: none;
+}
+
+.plantimage img:hover {
+  animation: wiggle 1.2s ease-in-out forwards;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-5deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.potnamebox {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 74vh;
+  left: 40vw;
+  width: 40vw;
+
+  align-items: center;
+}
+
+.potname {
+  font-size: 3em;
+  margin-right: 1vw;
+  color: #3f5535;
+}
+
+.level {
+  font-size: 2em;
+  margin-left: 1vw;
+  color: #3f5535;
+}
+
+.refresh {
+  position: absolute;
+  top: 78vh;
+  left: 33vw;
+  width: 34vw;
+  border-color: aqua;
+  background-color: #f5fbff;
+  padding: 10px; /* 내부 여백 추가 */
+  font-size: 2.5em; /* 글자 크기 조절 */
+  color: rgb(74, 213, 255); /* 글자 색상 조절 */
+  border-radius: 40px;
+  box-shadow: 0.1px 1px 10px 0.3px rgb(196, 196, 196);
+}
+
+.refresh:active {
+  transform: scale(1.05);
+}

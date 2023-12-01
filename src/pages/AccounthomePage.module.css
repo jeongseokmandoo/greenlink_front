@@ -1,0 +1,12 @@
+.accountbox {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 8vh;
+}
+
+.graybox {
+  width: 100vw;
+  height: 2.2vh;
+  background-color: #f5f5f5;
+}

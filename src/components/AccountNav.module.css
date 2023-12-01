@@ -1,0 +1,13 @@
+.nav {
+  width: 100vw;
+  display: flex;
+  margin-top: 15vh;
+  font-size: calc(1vw + 1vh);
+  align-items: flex-end;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}

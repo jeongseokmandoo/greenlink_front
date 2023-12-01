@@ -1,0 +1,34 @@
+/* SettingPage.css */
+.topNav {
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-weight: bold;
+}
+
+.contents {
+  margin-top: 5vh; /* TopNav의 높이만큼 여백을 줍니다. */
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  height: 8vh;
+  font-size: 2.5em;
+  color: gray;
+}
+
+.notifibtn {
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50px;
+  border: 4px double #14c145;
+  box-shadow: 0.1px 5px 12px 0.5px rgb(174, 174, 174);
+  text-decoration: none; /* 밑줄 제거 */
+  align-self: center;
+  background-color: white;
+  color: #14c145;
+  margin-left: 50vw;
+}

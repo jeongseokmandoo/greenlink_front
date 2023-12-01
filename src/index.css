@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Black.ttf") format("truetype");
+  /*font-family: "namu";
+  src: url("./assets/fonts/NanumPenScript-Regular.ttf") format("truetype");*/
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}

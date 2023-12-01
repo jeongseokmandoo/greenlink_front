@@ -1,0 +1,32 @@
+.btn2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 11vh;
+  right: 5vw;
+  width: 30vw;
+  height: 6vw;
+
+  font-size: 2em;
+  text-align: center;
+  border-radius: 50px;
+  border: 4px double #14c145;
+  box-shadow: 0.1px 5px 12px 0.5px rgb(174, 174, 174);
+}
+
+.btn2:active {
+  transform: scale(1.05);
+}
+
+.btn2link {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #14c145; /* 텍스트 색상을 검정색으로 고정 */
+  align-self: center;
+  font-size: 1.1em;
+}
+
+.btn2link:active,
+.btn2link:focus,
+.btn2link:hover {
+  color: i#14c145; /* 눌렀을 때 색상이 변하지 않도록 설정 */
+}

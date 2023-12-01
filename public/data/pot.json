@@ -1,0 +1,23 @@
+[
+  {
+    "pot_number": 1,
+    "plant_name": "식물1",
+    "start_date": "2023-01-01",
+    "plant_type": "유형1",
+    "moisture_level": 80
+  },
+  {
+    "pot_number": 2,
+    "plant_name": "식물2",
+    "start_date": "2023-02-01",
+    "plant_type": "유형2",
+    "moisture_level": 10
+  },
+  {
+    "pot_number": 20,
+    "plant_name": "식물20",
+    "start_date": "2023-10-01",
+    "plant_type": "유형20",
+    "moisture_level": 100
+  }
+]

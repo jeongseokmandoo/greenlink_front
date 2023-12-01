@@ -1,0 +1,35 @@
+.notifibox {
+  display: flex;
+  flex-direction: row;
+  margin: 3vw;
+  width: 90vw;
+  height: 10vh;
+}
+
+.notifibox .noti {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+  background-color: #e7f2ed;
+  width: 3vw;
+  height: 10vh;
+  border-radius: 5px;
+}
+
+.notifibox .content {
+  font-size: 40px;
+  padding: 50px;
+}
+
+.notifilist {
+  align-items: center;
+  margin-top: 5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 100vw;
+  height: 6vh;
+}
+
+.min {
+  font-size: 1px;
+}

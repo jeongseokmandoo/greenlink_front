@@ -1,0 +1,77 @@
+.main {
+  width: 100vw;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 8vh;
+  left: 8vw;
+  width: 84vw;
+  height: 75vh;
+  background-color: #f5f5f583;
+}
+
+.back {
+  position: absolute;
+  top: 0.5vh;
+  left: 3vw;
+  text-decoration: none; /* 밑줄 제거 */
+  color: #898a8d; /* 텍스트 색상을 검정색으로 고정 */
+  font-size: 2.2em;
+  width: 30vw;
+  height: auto;
+  margin-top: 2vh;
+  margin-left: 4vw;
+}
+
+.back:active,
+.back:focus,
+.back:hover {
+  color: inherit; /* 눌렀을 때 색상이 변하지 않도록 설정 */
+}
+
+.plantimage {
+  position: absolute;
+  top: 5vh;
+  left: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e7f2ed;
+  border-radius: 50%;
+  box-shadow: -1px 7px 40px 5px rgb(174, 174, 174);
+}
+
+.plantimage img {
+  position: absolute;
+  bottom: 1vh;
+  width: 30vw;
+  height: auto; /* 이미지의 원래 비율을 유지합니다. */
+  border-radius: 50%; /* 이미지를 원형으로 만듭니다. */
+}
+
+.updatebox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 25vh;
+  left: 4.5vw;
+  width: 75vw;
+}
+
+.updatebox .warn {
+  position: absolute;
+  top: 10vh;
+  color: #ee9292;
+  font-size: 1.8em;
+}
+
+.updatebox1,
+.updatebox2,
+.updatebox3 {
+}

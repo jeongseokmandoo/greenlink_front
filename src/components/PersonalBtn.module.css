@@ -1,0 +1,7 @@
+.button {
+  all: unset;
+  padding-bottom: 3vh;
+  font-size: calc(1.5vh + 1vw);
+  display: flex;
+  margin-left: 10vw;
+}

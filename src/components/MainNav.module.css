@@ -1,0 +1,11 @@
+.mainnav {
+  background-color: #e7f2ed;
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}

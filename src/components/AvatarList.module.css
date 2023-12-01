@@ -1,0 +1,9 @@
+.box {
+  display: flex;
+}
+
+.bigbox {
+  margin-top: 1vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}

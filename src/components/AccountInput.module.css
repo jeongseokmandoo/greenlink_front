@@ -1,0 +1,31 @@
+.Input2 {
+  width: 70vw;
+  height: 5vh;
+  margin: 0.1vh 15vw 1.5vh 15vw;
+  display: flex;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  font-size: calc(1.25vw + 1vh);
+  font-weight: bold;
+  padding-left: 1vw;
+  position: relative;
+}
+
+.Input2::placeholder {
+  color: #bdbdbd;
+  font-size: calc(1.25vw + 1vh);
+  font-weight: 350;
+}
+
+.Input3 {
+  width: 70vw;
+  height: 3vh;
+  margin: 10vw 10vw 3vh 0vh;
+  display: flex;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
