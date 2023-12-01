@@ -10,7 +10,7 @@ function AccountNav({ text1, text2, link1 }) {
           style={{ fontSize: "45px", textDecoration: "none", color: "black" }}
         >
           {" "}
-          ╳{" "}
+          &nbsp;&nbsp;╳&nbsp;&nbsp;&nbsp;{" "}
         </div>{" "}
       </Link>
       <div style={{ display: "flex", textAlign: "center" }}>

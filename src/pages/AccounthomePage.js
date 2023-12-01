@@ -43,6 +43,7 @@ function Accounthome() {
   const userName = userInfo.user.korean_name;
   const nickName = userInfo.user.nickname;
   const profilePicture = userInfo.user.profile_picture;
+  const familyInvite = userInfo.user.flower_pot.pot_number;
 
   // const familyMembersInfo = {
   //   familyMembers: [
@@ -119,6 +120,8 @@ function Accounthome() {
         icon2={setting_icon}
       />
       <div>
+        <br />
+        <br />
         <AccountBox
           className={styles.accountbox}
           src={profilePicture}
@@ -126,6 +129,8 @@ function Accounthome() {
           nickname={nickName}
           key={userID}
         />
+        <br />
+        <br />
         <Btn3 text="내 프로필 수정" link="/api/accountmodify" />
         <div className={styles.graybox}></div>
         <h4 style={{ fontSize: "2.7em", marginLeft: "6vw", color: "#4D5053" }}>
@@ -166,9 +171,20 @@ function Accounthome() {
         }}
       >
         {" "}
-        ⨁ 가족 초대하기
+        👨‍👩‍👧‍👦 가족 초대하기
       </button>
-      {isInvited && <p>화분번호</p>}
+      {isInvited && (
+        <p
+          style={{
+            fontSize: "calc(1.25vh + 1.25vw)",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          {" "}
+          {familyInvite}을 가족에게 보내주세요🌼 ˃ᴗ˂ 🌼
+        </p>
+      )}
       <MainNav />
     </div>
   );

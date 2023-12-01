@@ -5,11 +5,17 @@ import { Input2 } from "../components/AccountInput";
 import { useState } from "react";
 import BigBtn from "../components/BigBtn";
 
-const to6 = {
-  textDecoration: "none",
-  display: "flex",
-  justifyContent: "center",
-  fontSize: "calc(1vh + 1.25vw)",
+// const to6 = {
+//   textDecoration: "none",
+//   display: "flex",
+//   justifyContent: "center",
+//   fontSize: "calc(1vh + 1.25vw)",
+// };
+
+const textstyle = {
+  color: "black" /* 텍스트 색상을 검정색으로 고정 */,
+  fontSize: "2em",
+  marginLeft: "16vw",
 };
 
 function LoginPage(props) {
@@ -76,6 +82,7 @@ function LoginPage(props) {
             throw new Error("로그인에 실패하셨습니다.");
           } else {
             localStorage.setItem("data", JSON.stringify(data));
+
             console.log(localStorage.getItem(data));
             alert("로그인에 성공하셨습니다.");
             navigate("/api/home");
@@ -93,12 +100,14 @@ function LoginPage(props) {
     <div>
       <AccountNav text1="로그인" text2="가입하기" link1="/signupstep1" />
       <div style={{ marginTop: "8vh", marginBottom: "5vh" }}>
+        <p style={textstyle}>전화번호</p>
         <Input2
           type="text"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          placeholder="전화번호"
+          placeholder="01012345678"
         />
+        <p style={textstyle}>비밀번호</p>
         <Input2
           type="password"
           value={mypassword}

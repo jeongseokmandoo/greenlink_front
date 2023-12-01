@@ -104,6 +104,13 @@ function Accountmodify(props) {
     fontSize: "calc(1vh + 1.5vw)",
     textDecoration: "none",
     marginLeft: "5vw",
+    color: "#898a8d",
+    position: "absolute",
+    top: "0.5vh",
+    marginTop: "2vh",
+    marginLeft: "6vw",
+    width: "30vw",
+    fontSize: "2em",
   };
 
   return (
@@ -139,7 +146,6 @@ function Accountmodify(props) {
       <p style={ptag}>이미지를 클릭해서 선택해주세요!</p>
       {/* 아바타 선택 리스트 */}
       {fileListstyle && <AvatarList onClick={handleImageItemClick} />}
-
       <UpdateBox
         title="이름"
         type="text"
