@@ -102,7 +102,7 @@ function HomemodifyPage() {
             title="식물 이름"
             type="text"
             value={plantName}
-            placeholder="식물 이름"
+            placeholder={plantName}
           />
           <div className={styles.warn}>이름은 5글자를 넘을 수 없습니다.</div>
           <UpdateBox
