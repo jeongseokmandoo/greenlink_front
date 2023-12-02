@@ -4,6 +4,12 @@ import { Input2 } from "../components/AccountInput";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const textstyle = {
+  color: "black" /* 텍스트 색상을 검정색으로 고정 */,
+  fontSize: "2em",
+  marginLeft: "16vw",
+};
+
 function Signupstep1Page(props) {
   const [korean_name, setKorean_name] = useState("");
   const [username, setUsername] = useState("");
@@ -40,38 +46,47 @@ function Signupstep1Page(props) {
 
   return (
     <div>
-      <AccountNav text1="계정만들기" text2="로그인" link1="/api/login/" />
-
+      <AccountNav text1="계정 만들기" text2="로그인" link1="/api/login/" />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-
       <br />
       <br />
       <br />
       <br />
       <br />
       <div>
+        <p style={textstyle}>성명</p>
         <Input2
           type="text"
           value={korean_name}
           onChange={(e) => setKorean_name(e.target.value)}
-          placeholder="성명"
+          placeholder="홍길동"
         />
+        <p style={textstyle}>전화번호</p>
         <Input2
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          placeholder="전화번호(010XXXXXXXX)"
+          placeholder="01012345678"
         />
+        <p style={textstyle}>비밀번호</p>
         <Input2
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="비밀번호"
         />
+        <p
+          style={{
+            top: "10vh",
+            color: "#ee9292",
+            fontSize: "1.8em",
+            textAlign: "center",
+          }}
+        >
+          대문자 1개 이상, 특수문자 1개 이상, 8자 이상 12자 이하
+        </p>
+        <p style={textstyle}>비밀번호 확인</p>
         <Input2
           type="password"
           value={passwordConfirm}
@@ -79,6 +94,8 @@ function Signupstep1Page(props) {
           placeholder="비밀번호 확인"
         />
       </div>
+      <br />
+      <br />
       <br />
       <br />
       <br />

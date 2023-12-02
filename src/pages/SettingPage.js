@@ -25,13 +25,13 @@ const NotifiBar = () => {
 
   return (
     <div className={styles.clickbox}>
-      알림
+      🔔 &nbsp;&nbsp;&nbsp;알림
       <button
         className={styles.notifibtn}
         style={buttonStyle}
         onClick={handleNotification}
       >
-        {notification ? "알림 끄기" : "알림 켜기"}
+        {notification ? "ON" : "OFF"}
       </button>
     </div>
   );
@@ -54,7 +54,11 @@ function SettingPage() {
         icon2={x_icon}
       />
       <div className={styles.contents}>
-        <PersonalsetBtn text="개인/보안" onClick={personallock} />
+        <PersonalsetBtn
+          text="🔒 &nbsp;&nbsp;   개인/보안"
+          onClick={personallock}
+        />
+        <br />
         <NotifiBar />
       </div>
       <MainNav />

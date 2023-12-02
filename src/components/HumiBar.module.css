@@ -2,7 +2,7 @@
 .drop {
   position: absolute;
   top: 35vh;
-  left: 3.8vw;
+  left: 3.2vw;
   width: 9vw;
   height: auto;
 }
@@ -11,8 +11,8 @@
   position: absolute;
   top: 32vh;
   left: 5vw;
-  width: 6vw;
-  height: 35.5vh;
+  width: 5vw;
+  height: 33vh;
   background: linear-gradient(to top, rgb(255, 159, 104), #2cfebf);
   position: relative;
   border-radius: 50px;
@@ -27,6 +27,7 @@
 }
 
 .polygonbox img {
+  left: 1vw;
   position: absolute;
   bottom: 0;
   width: 3vw;

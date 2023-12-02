@@ -12,9 +12,12 @@ import GalleryPic5 from "../assets/GalleryPic5.png";
 import styles from "./GalleryhomePage.module.css";
 
 function GalleryhomePage(props) {
+  const topdata = JSON.parse(localStorage.getItem("data"));
+  const textname = topdata.user.flower_pot.plant_name;
+
   return (
     <div>
-      <TopNav text="퉁퉁이 사진" icon1={no_icon} icon2={no_icon} />
+      <TopNav text={textname + "사진"} icon1={no_icon} icon2={no_icon} />
       <p className={styles.text}>2023.11.18</p>
       <div className={styles.box}>
         <GalleryPic img={GalleryPic2} />
@@ -34,12 +37,10 @@ function GalleryhomePage(props) {
       <br />
       <br />
       <br />
-      <Btn text="사진 올리기" link="/gallerydetail" />
+      <Btn text="사진 올리기" />
       <MainNav />
     </div>
   );
 }
 
-
 export default GalleryhomePage;
-

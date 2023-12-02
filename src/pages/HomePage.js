@@ -16,7 +16,7 @@ function RefreshButton() {
 
   return (
     <button className={styles.refresh} onClick={refreshPage}>
-      !!습도 확인하기!!
+      💧습도 확인하기
     </button>
   );
 }

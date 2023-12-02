@@ -1,7 +1,7 @@
 .nav {
   width: 100vw;
   display: flex;
-  margin-top: 15vh;
+  margin-top: 3vh;
   font-size: calc(1vw + 1vh);
   align-items: flex-end;
   justify-content: space-around;
@@ -10,4 +10,7 @@
 
 .link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }

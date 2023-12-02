@@ -3,8 +3,16 @@ import TopNav from "../components/TopNav";
 import no_icon from "../assets/non_icon.png";
 import MainNav from "../components/MainNav";
 import styles from "./Setting.module.css";
-import PersonalsetBtn from "../components/PersonalsetBtn";
 import { useNavigate } from "react-router-dom";
+
+const btnstyle = {
+  all: "unset",
+  paddingBottom: "3vh",
+  fontSize: "calc(1.5vh + 1vw)",
+  display: "flex",
+  marginLeft: "10vw",
+  color: "#808080",
+};
 
 function SecurityPage(props) {
   const navigate = useNavigate();
@@ -52,9 +60,6 @@ function SecurityPage(props) {
 
   return (
     <div className={styles.main}>
-      <br />
-      <br />
-      <br />
       <TopNav
         className={styles.topNav}
         text="개인/보안"
@@ -65,9 +70,17 @@ function SecurityPage(props) {
       />
       <br />
       <br />
-      <div className={styles.contents}></div>
-      <PersonalsetBtn text="로그아웃" onClick={logout} />
-      <PersonalsetBtn text="탈퇴하기" onClick={deleteaccount} />
+      <br />
+      <br />
+      <br />
+      <button onClick={logout} style={btnstyle}>
+        🫥 &nbsp;&nbsp;로그아웃
+      </button>
+      <br />
+      <br />
+      <button onClick={deleteaccount} style={btnstyle}>
+        ⛔ &nbsp;&nbsp;탈퇴하기
+      </button>
       <MainNav />
     </div>
   );

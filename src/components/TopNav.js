@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "./TopNav.module.css";
 
 const icontest_style = {
-  width: "100%",
-  height: "100%",
+  width: "74.3%",
+  height: "80%",
   backgroundSize: "cover", //이미지를 div에 맞게 조절
 };
 
